@@ -21,9 +21,13 @@
   // movieTitleModifier = movieTitle.split(" ");
   // console.log(movieTitleModifier);
   const url = 'http://www.omdbapi.com/?s=' + movieTitleModifier + '&apikey=24cd73c2';
+  // const url2 = 'http://www.omdbapi.com/?type=' + movieTitleModifier + '&apikey=24cd73c2';
   console.log(url);
+  // console.log(url2);
   const request = new XMLHttpRequest();
+  const request2 = new XMLHttpRequest();
   request.open("Get", url);
+  // request.open("Get", url);
   request.addEventListener('load', function () {
   const moviesRetrieved = JSON.parse(request.responseText);
   const movies = moviesRetrieved.Search;
@@ -37,14 +41,13 @@
 })
 
 const extractMovies = function(movies){
+  if (movies !== undefined) {
   movies.forEach(function(movie){
     movie
       console.log(movie);
-})
-
-
-
-  }
+});
+}
+}
 }
 
 
