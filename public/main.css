@@ -1,5 +1,25 @@
-img {
-
+.topDiv {
   width: 40%;
   height: 5%;
+  background-color: grey;
+},
+
+#displayDetailsAndImgDiv {
+  background-color: grey;
+},
+
+#displayDetailsDiv {
+  background-color: grey;
+},
+
+#displayImageDiv {
+  background-color: grey;
+},
+
+.img, .ul, .li {
+  background-color: grey;
+},
+
+.body{
+  background-color: grey;
 }
