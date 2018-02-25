@@ -36,7 +36,7 @@ const app = function(){
   searchBarTitleDiv.id = "searchBarTitleDiv";
   searchButtonTitleDiv.id = "searchButtonTitleDiv";
 
-  
+
 
 
 
@@ -68,7 +68,7 @@ const app = function(){
     const moviesTitle = searchBarTitleDiv.value
     const space = / /gi;
     const moviesTitleModifier = moviesTitle.replace(space, "+");
-    const url = 'http://www.omdbapi.com/?s=' + moviesTitleModifier + '&apikey=24cd73c2';
+    const url = 'http://www.omdbapi.com/?s=' + moviesTitleModifier + '&apikey=' + API_KEY;
     console.log(url);
     const requestDetails = new XMLHttpRequest();
     requestDetails.open("Get", url);
